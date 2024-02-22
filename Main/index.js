@@ -107,7 +107,7 @@ answerDiv.addEventListener("mouseout", function() {
 
 window.addEventListener("load", function (){
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:3333/', true);
+    xhr.open('GET', 'http://185.250.149.77:3333/', true);
 
     xhr.send();
 
