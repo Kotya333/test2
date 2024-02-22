@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+</head>
+<body>
+
+<header class="main-header">
+        <div class="left">
+        <img class="main-logo "src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR4nO2Zu0oDQRSGv8RLVBRUEEVstNJKKwmYF7CwtLW09RG0tPCKPoEvYOELBBUEIQgWYgqx8K4RI4IgXkYSTmDYOGY35jKJ88GBZThz5p/Z+Qd2Fhz/hwgwC5wCSXnOtNUMHcAccAkoT9wBC0AXFtMHLAJpTXgCmJZIaO1pyc30sYZBYB141YTuA1NAyJMbA3a0vDdgCximioyKiHcR9Skioz76jknfD0/fcSpIblW/PKs6UkStoV/eZlkIS/EDbcAXETFQgvq9cgg8afWPgBmgoQT1aZZiJ9oA9zJoN+U78a608c6kraWYgu3S+UIreC5tbZSfiCxgUhv/Vhaw00+BHkl+1AocS9FGKk9YtvShpudZtnS/qdO8x3RxYPKHI7QahERLXNP3KprzyB2F2z6P0GoRFY1KNOehajTy2LNAlAoYuxTgQRInsIeYdvz7ZtmC1VaGWAoykSZLJ7Ms2gLjNZTJYNXK842bCO6NZHFby4TzCM4jWZxHTDiP4DySxXnEhPMIziNZnEfq1iPNwIYFn7bKExuizTdrFohWhlgNMpHcdVBFf7z4uGEMfB3054/9MqH86GoFNoGUBdtHFYiU+OXHfyYrFghUpbisu7HQF4X8cl1LvjBh1KtqNPKom4k4HJSOb9YIPbxbHjdLAAAAAElFTkSuQmCC">
+        </div>
+        <div class="right">
+            <input class="search-input" placeholder="Search">
+            <span class="main-header-span" id="create">Make new</span>
+            <span class="main-header-span" id="help">Help</span>
+            <span class="main-header-span" id="name">none</span>
+            <div class="main-header-icon"></div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="up-articles">
+                <i class="fi fi-rr-home"></i>
+                <div class="article right-art" id="firstArticle">
+                    <h2 class="article-header">Header</h2>
+                    <div class="article-text">
+                        <p>Текст</p>
+                        <span class="article-code">
+                            console.log("Hello world!");
+                        </span>
+                    </div>
+                </div>
+
+
+            <i class="fi fi-rr-home"></i>
+            <div class="article left-art"  id="secondArticle">
+                <h2 class="article-header">Header</h2>
+                <div class="article-text">
+                    <p>Текст</p>
+                    <span class="article-code">
+                            console.log("Hello world123123!");
+                        </span>
+                </div>
+            </div>
+            </div>
+        <div class="down-articles">
+            <i class="fi fi-rr-home"></i>
+            <div class="article right-art"  id="thirdArticle">
+                <h2 class="article-header">Header</h2>
+                <div class="article-text">
+                    <p>Текст</p>
+                    <span class="article-code">
+                            console.log("Hello world!");
+                        </span>
+                </div>
+            </div>
+
+
+            <i class="fi fi-rr-home"></i>
+            <div class="article left-art"  id="fourthArticle">
+                <h2 class="article-header">Header</h2>
+                <div class="article-text">
+                    <p>Текст</p>
+                    <span class="article-code">
+                            console.log("Hello world123123!");
+                        </span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="sec-menu" id="sec-menu">
+        <img src="../img/icons8-cross-mark-78.png" id="sec-menu-cross" class="right"></img>
+        <h3 class="sec-menu-header">Create New Article</h3>
+        <div class="sec-menu-buttons">
+            <button class="style-button" id="numPage">1</button>
+
+            <div class="sec-menu-buttons-btn">
+                <h3 class="sec-menu-buttons-btn-header">Текст</h3>
+                <button class="style-button" id="curStyle">Cursive</button>
+                <button class="style-button" id="boldStyle">Bold</button>
+                <button class="decoration-button" id="underlineStyle">Underline</button>
+                <input type="color" class="text-color-input" id="clStyle">
+                <select class="font-select">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+            </div>
+
+            <div class="sec-menu-buttons-types">
+                <h3 class="sec-menu-buttons-btn-header">Тип</h3>
+                <button class="style-button" id="hType">Header1</button>
+                <button class="style-button" id="h3Type">Header3</button>
+                <button class="style-button" id="pType">Paragraph</button>
+            </div>
+            <div class="sec-menu-buttons-types">
+                <h3 class="sec-menu-buttons-btn-header">Загрузить картинку</h3>
+                <input type="file" id="inpImg">
+                <button class="style-button" id="addImg">Открыть</button>
+            </div>
+        </div>
+        <div class="article-maker-content" contenteditable="true" width="500px" height="200px" id="act">
+            <div class="article-text">
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="info">
+            <h2 class="info-text">ABOUT PROJECT</h2>
+        </div>
+        <div class="answer">
+            <span class="answer-text">Information</span>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/compressorjs@latest/dist/compressor.min.js"></script>
+    <script src="index.js"></script>
+    <script src="docRedactor.js"></script>
+</body>
+</html>
