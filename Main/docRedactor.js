@@ -113,7 +113,7 @@ document.addEventListener("keydown", function (e) {
         }
 
 
-        const url = 'http://localhost:3333';
+        const url = 'http://185.250.149.77:3333/';
 
         let q1 = document.getElementById("firstArticle").innerHTML;
         let q2 = document.getElementById("secondArticle").innerHTML;
